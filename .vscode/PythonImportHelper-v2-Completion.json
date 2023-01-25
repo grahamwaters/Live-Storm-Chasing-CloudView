@@ -1,0 +1,393 @@
+[
+    {
+        "label": "feedparser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "feedparser",
+        "description": "feedparser",
+        "detail": "feedparser",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "BeautifulSoup",
+        "importPath": "bs4",
+        "description": "bs4",
+        "isExtraImport": true,
+        "detail": "bs4",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "Keys",
+        "importPath": "selenium.webdriver.common.keys",
+        "description": "selenium.webdriver.common.keys",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.keys",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "importPath": "selenium.webdriver.chrome.options",
+        "description": "selenium.webdriver.chrome.options",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.options",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "panel",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "panel",
+        "description": "panel",
+        "detail": "panel",
+        "documentation": {}
+    },
+    {
+        "label": "widgets",
+        "importPath": "panel",
+        "description": "panel",
+        "isExtraImport": true,
+        "detail": "panel",
+        "documentation": {}
+    },
+    {
+        "label": "widgets",
+        "importPath": "panel",
+        "description": "panel",
+        "isExtraImport": true,
+        "detail": "panel",
+        "documentation": {}
+    },
+    {
+        "label": "interact",
+        "importPath": "panel.interact",
+        "description": "panel.interact",
+        "isExtraImport": true,
+        "detail": "panel.interact",
+        "documentation": {}
+    },
+    {
+        "label": "interact",
+        "importPath": "panel.interact",
+        "description": "panel.interact",
+        "isExtraImport": true,
+        "detail": "panel.interact",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "feed",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "feed = feedparser.parse(\"http://www.spotternetwork.org/feeds/rss-reports.xml\")\n# Create a pandas dataframe from the RSS feed data\ndf = pd.DataFrame(feed.entries)\n# Parse the RSS feed at the second URL\nfeed2 = feedparser.parse(\"http://www.spotternetwork.org/feeds/rss-positions.xml\")\n# Create a pandas dataframe from the RSS feed data\ndf2 = pd.DataFrame(feed2.entries)\n# Save the pandas dataframe as a pickled file in the /data/ folder\nwith open('data/spotternetwork_reports_{}.pkl'.format(len(os.listdir('data/'))), 'wb') as file:\n    pickle.dump(df, file)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "df = pd.DataFrame(feed.entries)\n# Parse the RSS feed at the second URL\nfeed2 = feedparser.parse(\"http://www.spotternetwork.org/feeds/rss-positions.xml\")\n# Create a pandas dataframe from the RSS feed data\ndf2 = pd.DataFrame(feed2.entries)\n# Save the pandas dataframe as a pickled file in the /data/ folder\nwith open('data/spotternetwork_reports_{}.pkl'.format(len(os.listdir('data/'))), 'wb') as file:\n    pickle.dump(df, file)\nwith open('data/spotternetwork_positions_{}.pkl'.format(len(os.listdir('data/'))), 'wb') as file:\n    pickle.dump(df2, file)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "feed2",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "feed2 = feedparser.parse(\"http://www.spotternetwork.org/feeds/rss-positions.xml\")\n# Create a pandas dataframe from the RSS feed data\ndf2 = pd.DataFrame(feed2.entries)\n# Save the pandas dataframe as a pickled file in the /data/ folder\nwith open('data/spotternetwork_reports_{}.pkl'.format(len(os.listdir('data/'))), 'wb') as file:\n    pickle.dump(df, file)\nwith open('data/spotternetwork_positions_{}.pkl'.format(len(os.listdir('data/'))), 'wb') as file:\n    pickle.dump(df2, file)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "df2",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "df2 = pd.DataFrame(feed2.entries)\n# Save the pandas dataframe as a pickled file in the /data/ folder\nwith open('data/spotternetwork_reports_{}.pkl'.format(len(os.listdir('data/'))), 'wb') as file:\n    pickle.dump(df, file)\nwith open('data/spotternetwork_positions_{}.pkl'.format(len(os.listdir('data/'))), 'wb') as file:\n    pickle.dump(df2, file)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "chrome_options",
+        "kind": 5,
+        "importPath": "stream_me",
+        "description": "stream_me",
+        "peekOfCode": "chrome_options = Options()\nchrome_options.add_argument(\"--headless\")\nchrome_options.add_argument(\"--window-size=1920x1080\")\nchrome_options.add_argument(\"--no-sandbox\")\nchrome_options.add_argument(\"--disable-dev-shm-usage\")\nchrome_options.add_argument(\"--disable-gpu\")\nchrome_options.add_argument(\"--disable-extensions\")\nchrome_options.add_argument(\"--dns-prefetch-disable\")\nchrome_options.add_argument(\"--disable-setuid-sandbox\")\nchrome_options.add_argument(\"--disable-dev-shm-usage\")",
+        "detail": "stream_me",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 5,
+        "importPath": "stream_me",
+        "description": "stream_me",
+        "peekOfCode": "driver = webdriver.Chrome(options=chrome_options)\n# Get the page\ndriver.get(\"https://livestormchasing.com/map\")\n# Get the share buttons\nshare_buttons = driver.find_elements_by_class_name(\"rounded-full\")\n# Get the links\nshare_links = []\nfor button in share_buttons:\n    share_links.append(button.get_attribute(\"href\"))\n# Get the video links",
+        "detail": "stream_me",
+        "documentation": {}
+    },
+    {
+        "label": "share_buttons",
+        "kind": 5,
+        "importPath": "stream_me",
+        "description": "stream_me",
+        "peekOfCode": "share_buttons = driver.find_elements_by_class_name(\"rounded-full\")\n# Get the links\nshare_links = []\nfor button in share_buttons:\n    share_links.append(button.get_attribute(\"href\"))\n# Get the video links\nvideo_links = []\nfor link in share_links:\n    driver.get(link)\n    video_links.append(driver.find_element_by_tag_name(\"video\").get_attribute(\"src\"))",
+        "detail": "stream_me",
+        "documentation": {}
+    },
+    {
+        "label": "share_links",
+        "kind": 5,
+        "importPath": "stream_me",
+        "description": "stream_me",
+        "peekOfCode": "share_links = []\nfor button in share_buttons:\n    share_links.append(button.get_attribute(\"href\"))\n# Get the video links\nvideo_links = []\nfor link in share_links:\n    driver.get(link)\n    video_links.append(driver.find_element_by_tag_name(\"video\").get_attribute(\"src\"))\n# Get the names of the chasers\nnames = []",
+        "detail": "stream_me",
+        "documentation": {}
+    },
+    {
+        "label": "video_links",
+        "kind": 5,
+        "importPath": "stream_me",
+        "description": "stream_me",
+        "peekOfCode": "video_links = []\nfor link in share_links:\n    driver.get(link)\n    video_links.append(driver.find_element_by_tag_name(\"video\").get_attribute(\"src\"))\n# Get the names of the chasers\nnames = []\nfor link in share_links:\n    names.append(link.split(\"/\")[-1])\n# Show the video links\nfor name, link in zip(names, video_links):",
+        "detail": "stream_me",
+        "documentation": {}
+    },
+    {
+        "label": "names",
+        "kind": 5,
+        "importPath": "stream_me",
+        "description": "stream_me",
+        "peekOfCode": "names = []\nfor link in share_links:\n    names.append(link.split(\"/\")[-1])\n# Show the video links\nfor name, link in zip(names, video_links):\n    print(name, link)\n# Close the driver\ndriver.close()\n# Create the dashboard\nimport panel as pn",
+        "detail": "stream_me",
+        "documentation": {}
+    },
+    {
+        "label": "dashboard",
+        "kind": 5,
+        "importPath": "stream_me",
+        "description": "stream_me",
+        "peekOfCode": "dashboard = pn.Column()\n# Add the video links\nfor name, link in zip(names, video_links):\n    dashboard.append(pn.pane.HTML(\n        f\"\"\"<h1>{name}</h1>\n        <video src=\"{link}\" controls autoplay loop></video>\"\"\"))\n# Show the dashboard\ndashboard.show()",
+        "detail": "stream_me",
+        "documentation": {}
+    },
+    {
+        "label": "get_streams",
+        "kind": 2,
+        "importPath": "streamers",
+        "description": "streamers",
+        "peekOfCode": "def get_streams(streams_urls_dict):\n    streams = []\n    videos = []\n    for stream_name, stream_url in streams_urls_dict.items():\n        try:\n            response = requests.get(stream_url)\n            soup = BeautifulSoup(response.text, 'html.parser')\n            stream = {}\n            stream['stream_name'] = stream_name\n            # find stream content at #stream > div > div.container > video css selector",
+        "detail": "streamers",
+        "documentation": {}
+    },
+    {
+        "label": "create_panel",
+        "kind": 2,
+        "importPath": "streamers",
+        "description": "streamers",
+        "peekOfCode": "def create_panel(streams):\n    panel = pn.Column()\n    for stream in streams:\n        stream_panel = pn.Column(\n            pn.pane.HTML(\n                f\"\"\"\n                <h3>{stream['stream_name']}</h3>\n                <p>{stream['stream_description']}</p>\n                <p>{stream['stream_location']}</p>\n                <p>{stream['stream_viewers']}</p>",
+        "detail": "streamers",
+        "documentation": {}
+    },
+    {
+        "label": "stream_urls_dict",
+        "kind": 5,
+        "importPath": "streamers",
+        "description": "streamers",
+        "peekOfCode": "stream_urls_dict = {}\nstream_urls_dict['Jason Cooley'] = 'https://livestormchasing.com/chasers/jason.cooley'\nstream_urls_dict['Steve Wooten'] = 'https://livestormchasing.com/chasers/steve.wooten'\nstream_urls_dict['Brett Adair'] = 'https://livestormchasing.com/chasers/brett.adair'\nstream_urls_dict['Michael Craddock'] = 'https://livestormchasing.com/chasers/michael.craddock'\nstream_urls_dict['Ryan McCarthy'] = 'https://livestormchasing.com/chasers/ryan.mccarthy'\nstream_urls_dict['Brad Arnold'] = 'https://livestormchasing.com/chasers/brad.arnold'\nstream_urls_dict['James McMullin'] = 'https://livestormchasing.com/chasers/james.mcmullin'\nstream_urls_dict['Eric Tole'] = 'https://livestormchasing.com/chasers/eric.tole'\nstream_urls_dict['Joshua Myers'] = 'https://livestormchasing.com/chasers/joshua.myers'",
+        "detail": "streamers",
+        "documentation": {}
+    },
+    {
+        "label": "streams_result",
+        "kind": 5,
+        "importPath": "streamers",
+        "description": "streamers",
+        "peekOfCode": "streams_result = get_streams(stream_urls_dict)\npanel_result = create_panel(streams_result)\npanel_result.servable()\npn.pane.HTML(\n    f\"\"\"\n    <iframe src=\"{streams_result[0]['stream_url']}\" width=\"560\" height=\"315\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    \"\"\"\n)",
+        "detail": "streamers",
+        "documentation": {}
+    },
+    {
+        "label": "panel_result",
+        "kind": 5,
+        "importPath": "streamers",
+        "description": "streamers",
+        "peekOfCode": "panel_result = create_panel(streams_result)\npanel_result.servable()\npn.pane.HTML(\n    f\"\"\"\n    <iframe src=\"{streams_result[0]['stream_url']}\" width=\"560\" height=\"315\" frameborder=\"0\" allow=\"autoplay; fullscreen\" allowfullscreen></iframe>\n    \"\"\"\n)",
+        "detail": "streamers",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "url = \"https://livestormchasing.com/chasers/brad.arnold\"\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, \"html.parser\")\nvideo_element = soup.find(\"video\", {\"data-html5-video\":\"\"})\nif video_element:\n    video_url = video_element.get(\"src\")\nelse:\n    video_url = None\nprint(video_url)\nsrc_url = 'blob:https://livestormchasing.com/fccd36f7-b81c-4656-9242-fee14b266dbf'",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "response = requests.get(url)\nsoup = BeautifulSoup(response.text, \"html.parser\")\nvideo_element = soup.find(\"video\", {\"data-html5-video\":\"\"})\nif video_element:\n    video_url = video_element.get(\"src\")\nelse:\n    video_url = None\nprint(video_url)\nsrc_url = 'blob:https://livestormchasing.com/fccd36f7-b81c-4656-9242-fee14b266dbf'\nwith open(\"video.html\", \"w\") as f:",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "soup",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "soup = BeautifulSoup(response.text, \"html.parser\")\nvideo_element = soup.find(\"video\", {\"data-html5-video\":\"\"})\nif video_element:\n    video_url = video_element.get(\"src\")\nelse:\n    video_url = None\nprint(video_url)\nsrc_url = 'blob:https://livestormchasing.com/fccd36f7-b81c-4656-9242-fee14b266dbf'\nwith open(\"video.html\", \"w\") as f:\n    f.write(f\"\"\"",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "video_element",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "video_element = soup.find(\"video\", {\"data-html5-video\":\"\"})\nif video_element:\n    video_url = video_element.get(\"src\")\nelse:\n    video_url = None\nprint(video_url)\nsrc_url = 'blob:https://livestormchasing.com/fccd36f7-b81c-4656-9242-fee14b266dbf'\nwith open(\"video.html\", \"w\") as f:\n    f.write(f\"\"\"\n    <html>",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "src_url",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "src_url = 'blob:https://livestormchasing.com/fccd36f7-b81c-4656-9242-fee14b266dbf'\nwith open(\"video.html\", \"w\") as f:\n    f.write(f\"\"\"\n    <html>\n    <body>\n    <iframe width=\"560\" height=\"315\" src=\"{video_url}\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n    </body>\n    </html>\n    \"\"\")",
+        "detail": "test",
+        "documentation": {}
+    }
+]
