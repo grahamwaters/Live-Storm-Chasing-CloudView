@@ -1,5 +1,6 @@
-# stormchasers_data_collector
-Collects data on the Storm Spotter Network's locations and reports via RSS.
+# Live Storm-chasing Cloudview Dashboard
+
+(beta) Collects data on the Storm Spotter Network's locations and reports via RSS.
 
 ![example](images/example.png)
 
